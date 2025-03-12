@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-# import plotly.express as px
-import matplotlib.pyplot as plt
+import plotly.express as px
+# import matplotlib.pyplot as plt
 
 # Load the sales data
 @st.cache_data
@@ -31,8 +31,8 @@ st.subheader(f"Sales Data for {selected_country} in {selected_year}")
 st.write(filtered_df)
 
 # Line chart visualization
-# fig = px.line(aggregated_sales, x="Date", y="Revenue", title="Sales Trend")
-aggregated_sales.plot(figsize = (15, 5))
+fig = px.line(aggregated_sales, x="Date", y="Revenue", title="Sales Trend")
+# aggregated_sales.plot(figsize = (15, 5))
 st.plotly_chart(fig)
 
 st.sidebar.markdown("---")
