@@ -2,70 +2,20 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": 9,
    "id": "45d76cb1-6554-40f0-b37f-8de02151f0eb",
    "metadata": {},
    "outputs": [
     {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "2025-03-12 11:18:30.353 No runtime found, using MemoryCacheStorageManager\n",
-      "2025-03-12 11:18:30.354 No runtime found, using MemoryCacheStorageManager\n",
-      "2025-03-12 11:18:30.355 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:30.356 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:30.356 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:30.862 Thread 'Thread-6': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:30.863 Thread 'Thread-6': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "/var/folders/db/k83fvb9n4jvc0k30mrr8127snf90dv/T/ipykernel_8869/2726606283.py:9: DtypeWarning: Columns (5) have mixed types. Specify dtype option on import or set low_memory=False.\n",
-      "  return pd.read_csv(sales_data_path)\n",
-      "2025-03-12 11:18:32.713 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.713 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.714 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.714 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.714 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.714 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.844 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.844 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.846 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.846 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.847 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.847 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.859 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.859 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.859 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.860 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.860 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:32.860 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "/var/folders/db/k83fvb9n4jvc0k30mrr8127snf90dv/T/ipykernel_8869/2726606283.py:25: SettingWithCopyWarning: \n",
-      "A value is trying to be set on a copy of a slice from a DataFrame.\n",
-      "Try using .loc[row_indexer,col_indexer] = value instead\n",
-      "\n",
-      "See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n",
-      "  filtered_df[\"Date\"] = pd.to_datetime(filtered_df[\"Date\"])\n",
-      "2025-03-12 11:18:33.085 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.085 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.117 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.119 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.274 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.274 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.275 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.275 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.275 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.275 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.275 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2025-03-12 11:18:33.275 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n"
+     "ename": "ModuleNotFoundError",
+     "evalue": "No module named 'plotly'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[9], line 3\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mstreamlit\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m \u001b[38;5;21;01mst\u001b[39;00m\n\u001b[1;32m      2\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mpandas\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m \u001b[38;5;21;01mpd\u001b[39;00m\n\u001b[0;32m----> 3\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mplotly\u001b[39;00m\u001b[38;5;21;01m.\u001b[39;00m\u001b[38;5;21;01mexpress\u001b[39;00m \u001b[38;5;28;01mas\u001b[39;00m \u001b[38;5;21;01mpx\u001b[39;00m\n\u001b[1;32m      5\u001b[0m \u001b[38;5;66;03m# Load the sales data\u001b[39;00m\n\u001b[1;32m      6\u001b[0m \u001b[38;5;129m@st\u001b[39m\u001b[38;5;241m.\u001b[39mcache_data\n\u001b[1;32m      7\u001b[0m \u001b[38;5;28;01mdef\u001b[39;00m \u001b[38;5;21mload_data\u001b[39m():\n",
+      "\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'plotly'"
      ]
-    },
-    {
-     "data": {
-      "text/plain": [
-       "DeltaGenerator(_root_container=1, _parent=DeltaGenerator())"
-      ]
-     },
-     "execution_count": 10,
-     "metadata": {},
-     "output_type": "execute_result"
     }
    ],
    "source": [
@@ -110,7 +60,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": None,
    "id": "58c9de37-56db-49c0-b908-2c5e9d8b9afb",
    "metadata": {},
    "outputs": [],
